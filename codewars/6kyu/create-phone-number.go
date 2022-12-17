@@ -6,8 +6,6 @@ import (
 )
 
 func convertToString(numbers interface{}) string {
-	fmt.Println(strings.Replace(fmt.Sprint(numbers), " ", "", -1))
-	fmt.Println(strings.Trim(strings.Replace(fmt.Sprint(numbers), " ", "", -1), "[]"))
 	return strings.Trim(strings.Replace(fmt.Sprint(numbers), " ", "", -1), "[]")
 }
 
